@@ -1,0 +1,14 @@
+name = "odak-paneli"
+compatibility_date = "2025-07-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "mydentor-dashboard"
+database_id = "ade9eecf-5a06-4205-8915-f0c8ccc7f4fd"
+
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "mydentor-dashboard-bucket"
+
+[[ai]]
+binding = "AI"
