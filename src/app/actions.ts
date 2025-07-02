@@ -1,7 +1,7 @@
 // Dosya Adı: src/app/actions.ts
 // Görev: Tüm sunucu tarafı mantığını içerir: dosya listeleme, yükleme ve AI ile özetleme.
 'use server';
-import { getCloudflarePagesContext } from 'cloudflare-pages-plugin-next-swr/context';
+import { getCloudflarePagesContext } from '../getCloudflarePagesContext';
 import { revalidatePath } from 'next/cache';
 import { Ai } from '@cloudflare/ai';
 // Dosya tipini tanımla
