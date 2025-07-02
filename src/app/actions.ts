@@ -1,7 +1,19 @@
 // Dosya Adı: src/app/actions.ts
 // Görev: Tüm sunucu tarafı mantığını içerir: dosya listeleme, yükleme ve AI ile özetleme.
 'use server';
-import { getCloudflarePagesContext } from 'cloudflare-pages-plugin-next-swr/context';
+
+/**
+ * Cloudflare Pages bindings are exposed on the global scope when running in the
+ * worker runtime. This helper mimics the API from
+ * `cloudflare-pages-plugin-next-swr` so we don't rely on that package at build
+ * time.
+ */
+function getCloudflarePagesContext(): { env: any } {
+  if (typeof globalThis !== 'undefined') {
+    return { env: globalThis as any };
+  }
+  return { env: {} };
+}
 import { revalidatePath } from 'next/cache';
 import { Ai } from '@cloudflare/ai';
 // Dosya tipini tanımla
