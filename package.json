@@ -11,7 +11,9 @@
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.3.4"
+    "next": "15.3.4",
+    "@cloudflare/ai": "^0.8.1",
+    "cloudflare-pages-plugin-next-swr": "^0.8.1"
   },
   "devDependencies": {
     "typescript": "^5",

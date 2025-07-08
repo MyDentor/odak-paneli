@@ -34,5 +34,14 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Local Development
+
+This project relies on Cloudflare Pages features such as D1, R2 and the AI binding.
+Install dependencies and start the development server via `wrangler` so these bindings are available:
+
+```bash
+npm install
+npx wrangler pages dev
+```
 # odak-paneli
 # odak-paneli
